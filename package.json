@@ -10,14 +10,11 @@
     "react-throttle": "^0.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
-    "build:webpack": "webpack",
+    "build": "webpack",
     "build:local": "webpack --env.NODE_ENV=local",
     "build:prod": "webpack -p --env.NODE_ENV=production",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
     "babel-preset-stage-2": "^6.24.1",
