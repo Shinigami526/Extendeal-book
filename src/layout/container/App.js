@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import { Link, Route } from 'react-router-dom'
+import MainPage from '../components/MaiPage'
+import SearchBooks from '../components/SearchBook'
+import shelfs from '../components/shelfs'
+import PopMSG from '../components/PopMSG'
 
 class App extends Component {
+  state = {
+    
+  }
+
+  //
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="app">
+        <Route exact path="/" render={({ history }) => (
+          <MainPage showPopMSG={this.showPopMSG}/>
+        )}/>
+
+        <Route exact path="/search" render={({ history }) => (
+          <SearchBooks showPopMSG={this.showPopMSG}/>
+        )}/>
       </div>
-    );
+    )
   }
 }
 
