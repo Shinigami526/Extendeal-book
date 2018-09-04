@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../container/App.css';
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import shelfs from './shelfs'
 import * as BooksAPI from '../../data/BookApi'
 import Book from './Book'
@@ -61,7 +61,7 @@ class MainPage extends Component {
       <div className="list-books">
         <PopMSG display={this.state.popmsgdisplay} text={this.state.popmsg}/>
         <div className="list-books-title">
-          <h1>MyReads</h1>
+          <h1>Extendeal-Book</h1>
         </div>
         <img alt="loading gif" className="middlr bottom-side" style={{width: "175px", display: this.state.showLoading}} src="https://ryanwaite28.github.io/book-search/Loading_icon.gif"/>
 

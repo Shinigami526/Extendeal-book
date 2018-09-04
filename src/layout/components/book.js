@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import '../components/App.css';
-import { Link, Route } from 'react-router-dom'
-import shelfs from './shelfs'
-import * as BooksAPI from './BooksAPI'
-
-const doc = document;
+import '../container/App.css';
+import * as BooksAPI from '../../data/BookApi';
 
 class Book extends Component {
   constructor(props) {

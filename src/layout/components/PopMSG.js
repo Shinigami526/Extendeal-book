@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import { Link, Route } from 'react-router-dom'
-import shelfs from './shelfs'
-import * as BooksAPI from './BooksAPI'
+import '../container/App.css';
 
 class PopMSG extends Component {
   state = {
