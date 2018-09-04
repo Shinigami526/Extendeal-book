@@ -24,11 +24,6 @@ class Book extends Component {
     });
   }
 
-  componentDidMount() {
-    // console.log(this);
-
-  }
-
   render() {
     return (
       <div id={this.props.id} key={this.props.id} className="book">
