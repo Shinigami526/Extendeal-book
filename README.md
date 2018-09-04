@@ -10,9 +10,9 @@
 
 
 ## Inicializar el proyecto
-* **Requisito** node v8.11.4 [install node] (https://nodejs.org/es/)
-* **Preparar el entorno** Install yarn [Installation Guide](https://yarnpkg.com/en/docs/install)
-* **Instalar las dependencia** Instalar la dependencia con el comando: yarn
-* **Generar el archivo js** Iniciar con el comando:yarn build:prod 
-* **Correr el proyecto** iniciar el proyecto con el comando: yarn build:dev
+* **Requisito** - node v8.11.4 [install node] (https://nodejs.org/es/)
+* **Preparar el entorno** - Install yarn [Installation Guide](https://yarnpkg.com/en/docs/install)
+* **Instalar las dependencia** - Instalar la dependencia con el comando: yarn
+* **Generar el archivo js** - Iniciar con el comando:yarn build:prod 
+* **Correr el proyecto**- iniciar el proyecto con el comando: yarn build:dev
 * **Fin** 🐈
