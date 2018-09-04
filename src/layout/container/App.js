@@ -7,11 +7,6 @@ import SearchBooks from '../components/SearchBook'
 
 
 class App extends Component {
-  state = {
-    
-  }
-
-  //
 
   render() {
     return (
