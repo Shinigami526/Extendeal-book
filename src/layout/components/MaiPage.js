@@ -35,9 +35,9 @@ class MainPage extends Component {
     BooksAPI.getAll().then((books) => {
       console.log(books);
 
-      var currently_reading = books.filter((book) => {return book.shelf === shelfs.currentlyReading});
-      var want_to_read = books.filter((book) => {return book.shelf === shelfs.wantToRead});
-      var already_read = books.filter((book) => {return book.shelf === shelfs.read});
+      const currently_reading = books.filter((book) => {return book.shelf === shelfs.currentlyReading});
+      const want_to_read = books.filter((book) => {return book.shelf === shelfs.wantToRead});
+      const already_read = books.filter((book) => {return book.shelf === shelfs.read});
 
       this.setState({
         currently_reading: currently_reading,
