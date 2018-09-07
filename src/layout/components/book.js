@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../container/App.css';
 import * as BooksAPI from '../../data/BookApi';
 
 class Book extends Component {

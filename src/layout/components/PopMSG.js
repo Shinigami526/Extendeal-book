@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../container/App.css';
 
 class PopMSG extends Component {
 

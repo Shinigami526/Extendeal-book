@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../container/App.css';
 import { Link } from 'react-router-dom'
 import shelfs from './shelfs'
 import * as BooksAPI from '../../data/BookApi'
