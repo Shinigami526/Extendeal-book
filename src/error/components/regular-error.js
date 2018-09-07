@@ -4,7 +4,7 @@ function RegularError(props) {
 
   return (
 
-    <h1 style={{color: 'white'}}>Ha ocurrido un error</h1>
+    <h1 style={{background: 'black', color:'white'}}>Ha ocurrido un error</h1>
 
   )
 
