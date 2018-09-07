@@ -1,0 +1,20 @@
+/*--------------------------
+        MIXIN
+----------------------------*/
+
+@mixin max($num) {
+      width: $num;
+      height: $num;
+}
+
+@mixin none($none){
+  border: $none;
+  outline: $none;
+}
+
+@mixin multi($top,$left,$width,$height){
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+}

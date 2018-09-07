@@ -43,30 +43,16 @@ module.exports = (env) => {
           },
         },
         {
-          test: /\.css$/,
-          use: ExtractTextPlugin.extract({
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  minimize: true,
-                }
+          test: /\.(scss|sass)$/,
+          use: [
+            'css-loader',
+            {
+              loader: 'fast-sass-loader',
+              options: {
+                minimize: true,
               }
-            ]
-          })
-        },
-        {
-          test: /\.scss$/,
-          use: ExtractTextPlugin.extract({
-            use: [
-              {
-                loader: ['css-loader', 'sass-loader'],
-                options: {
-                  minimize: true,
-                }
-              }
-            ]
-          })
+            }
+          ]
         },
         {
           test: /\.(jpg|png|gif|svg)$/,

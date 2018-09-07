@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
-import './App.css';
+import '../../styles/_style.scss'
 import { Route } from 'react-router-dom'
 import MainPage from '../components/MaiPage'
 import SearchBooks from '../components/SearchBook'

@@ -1,0 +1,194 @@
+@import 'lib/variable';
+@import 'mixin';
+
+html, body, .root {
+  height: $percentage;
+}
+body {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body, .app {
+  background:$color-brand;
+}
+
+/* main page */
+
+.list-books-title {
+  padding: 10px 0;
+  background: $color-secondary;
+  text-align: center;
+}
+.list-books-title h1 {
+  font-weight: 400;
+  margin: 0;
+  color: $color-brand;
+}
+
+.list-books-content {
+  padding: 0 0 80px;
+  flex: 1;
+}
+
+.bookshelf {
+  padding: 0 10px 20px;
+}
+
+@media (min-width: 600px) {
+  .bookshelf {
+    padding: 0 20px 40px;
+  }
+}
+
+.bookshelf-title {
+  border-bottom: 1px solid $color-tertiary;
+}
+.bookshelf-books {
+  text-align: center;
+}
+
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+.open-search a {
+  display: block;
+  @include max(50px);
+  border-radius: $percentage-2;
+  background: $color-search;
+  background-image: url('../icons/add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  box-shadow: $shadow, $shadow-2;
+  font-size: 0;
+}
+
+/* search page */
+
+.search-books-bar {
+  position: fixed;
+  width: $percentage;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  box-shadow:$shadow-search , $shadow-search-2;
+}
+.search-books-input-wrapper {
+  flex: 1;
+  background: $search-book;
+}
+.search-books-bar input {
+  width: $percentage;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  @include none(none);
+}
+
+.close-search {
+  display: block;
+  @include multi(20px, 15px, 50px, 53px);
+  background: $color-brand;
+  background-image: url('../icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  font-size: 0;
+}
+
+.search-books-results {
+  padding: 80px 10px 20px;
+}
+
+/* books grid */
+
+.books-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.books-grid li {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.book {
+  width: 140px;
+}
+.book-title,
+.book-authors {
+  font-size: 0.8em;
+}
+.book-title {
+  margin-top: 10px;
+}
+.book-authors {
+  color: $book-author;
+}
+
+.book-top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  @include max(40px);
+  border-radius: $percentage-2;
+  background: $book-shelf;
+  background-image: url('../icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: $shadow, $shadow-2;
+}
+.book-shelf-changer select {
+  @include max(100%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* book cover */
+
+.book-cover {
+  box-shadow: $shadow, $shadow-2;
+  background: $book-cover;
+}
+.book-cover-title {
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#msg-popup-container {
+  position: fixed;
+  bottom: 10px;
+  width: $percentage;
+  z-index: 10;
+
+}
+#msg-box {
+  display: block;
+  margin: auto;
+  max-width: 95%;
+  padding: 15px;
+  text-align: center;
+  background: $grey;
+  color: $color-brand;
+  font-weight: bold;
+  width: 215px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 7px $color-brand;
+  z-index: 1000;
+}
